@@ -15,7 +15,8 @@ steps:
 - task: UseDotNet@2
   displayName: 'Use .NET SDK $(dotnetSdkVersion)'
   inputs:
-    version: '$(dotnetSdkVersion)'
+    version: '5.0.x'
+    packageType: runtime
 
 - task: Npm@1
   displayName: 'Run npm install'
